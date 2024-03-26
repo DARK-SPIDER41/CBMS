@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section-container">
+        <section class="section-dashboard sec">
+          <div class="info-boxes">
+            <div class="passengers-box count-box">
+              <p>Total passengers</p>
+              <ion-icon name="people-outline" class="box-icon"></ion-icon>
+              <p class="num-passengers num">100</p>
+            </div>
+            <div class="vehicles-box count-box">
+              <p>Total Vehicles</p>
+              <ion-icon name="bus-outline" class="box-icon"></ion-icon>
+              <p class="num-vehicles num">4</p>
+            </div>
+            <div class="drivers-box count-box">
+              <p>Total Drivers</p>
+              <ion-icon name="people-outline" class="box-icon"></ion-icon>
+              <p class="num-drivers num">4</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="msg-heading">
+              <h2>Messages</h2>
+              <button class="send-msg btn">Send message</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Sr. No.</th>
+                  <th>Sender</th>
+                  <th>Subject</th>
+                  <th>Date & Time</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Omkar Yerudkar</td>
+                  <td>For changing in route</td>
+                  <td>27/9/2023</td>
+                  <td>viewed</td>
+                  <td><button class="view btn">view</button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Anish Shinde</td>
+                  <td>For changing in route</td>
+                  <td>21/10/2023</td>
+                  <td>viewed</td>
+                  <td><button class="view btn">view</button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Rohit Patil</td>
+                  <td>For changing in route</td>
+                  <td>30/10/2023</td>
+                  <td>viewed</td>
+                  <td><button class="view btn">view</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section-drivers sec hidden">
+          <h2>List Of Drivers</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="search by mobile number" />
+            <button>Search</button>
+            <button>add</button>
+          </div>
+          <table>
+            <thead>
+              <th>Sr No.</th>
+              <th>D-ID</th>
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Age</th>
+              <th>Licence No</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>D002</td>
+                <td>RAM</td>
+                <td>9123456734</td>
+                <td>32</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>D002</td>
+                <td>RAM</td>
+                <td>9123456734</td>
+                <td>32</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>D002</td>
+                <td>RAM</td>
+                <td>9123456734</td>
+                <td>32</td>
+                <td>ABC123</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="form-driver">
+            <label for="driver-name">Name</label>
+            <input type="text" id="driver-name" placeholder="Ram Singh" />
+            <label for="driver-phone"></label>
+            <input type="tel" id="driver-phone" placeholder="9876543210" />
+            <label for="driver-age"></label>
+            <input type="number" id="driver-age" placeholder="32" />
+            <label for="driver-license">License number</label>
+            <input type="number" placeholder="ABC123" />
+            <button>Clear</button>
+            <button>Add</button>
+          </form>
+        </section>
+        <section class="section-vehicle sec hidden">
+          <h2>List Of Vehicles</h2>
+          <div class="vehicle-search-bar">
+            <input
+              type="text"
+              placeholder="search by vehicle number"
+              class="vehicle-search-input"
+            />
+            <button class="vehicle-search-btn btn">Search</button>
+          </div>
+
+          <div class="vehicle-list">
+            <label class="add-vehicle-label">Add new Vehicles</label>
+            <button class="add-vehicle btn">add</button>
+            <table>
+              <thead>
+                <th>Sr No.</th>
+                <th>V-ID</th>
+                <th>Vehicle Number</th>
+                <th>Driver</th>
+                <th>Vehicle type</th>
+                <th>Live Location</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section-transporter sec hidden">
+          <h2>List Of Transporter</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="search by mobile number" />
+            <button>Search</button>
+            <button>add</button>
+          </div>
+          <table>
+            <thead>
+              <th>Sr No.</th>
+              <th>T-ID</th>
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Age</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>T002</td>
+                <td>Raju</td>
+                <td>9087675477</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>T002</td>
+                <td>Raju</td>
+                <td>9087675477</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>T002</td>
+                <td>Raju</td>
+                <td>9087675477</td>
+                <td>34</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="form-transporter">
+            <label for="transporter-name">Transporter Name</label>
+            <input type="text" id="vehicle-number" placeholder="Raju Singh" />
+            <label for="transporter-phone"></label>
+            <input
+              type="number"
+              id="transporter-phone"
+              placeholder="9087675477"
+            />
+            <label for="transporter-age"></label>
+            <input type="text" id="transporter-age" placeholder="34" />
+            <button>Clear</button>
+            <button>Add</button>
+          </form>
+        </section>
+        <section class="section-passenger sec hidden">
+          <h2>List Of Transporter</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="search by mobile number" />
+            <button>Search</button>
+            <button>add</button>
+          </div>
+          <table>
+            <thead>
+              <th>Sr No.</th>
+              <th>Passenger Name</th>
+              <th>Passenger-ID</th>
+              <th>Mobile</th>
+              <th>Vehicle number morning</th>
+              <th>Vehicle number evening</th>
+              <th>Bus stop name</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>P001</td>
+                <td>9087675477</td>
+                <td>MH101002</td>
+                <td>MH101002</td>
+                <td>shahupuri</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>P001</td>
+                <td>9087675477</td>
+                <td>MH101002</td>
+                <td>MH101002</td>
+                <td>shahupuri</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>P001</td>
+                <td>9087675477</td>
+                <td>MH101002</td>
+                <td>MH101002</td>
+                <td>shahupuri</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="form-passenger">
+            <label for="passenger-name">Passenger Name</label>
+            <input type="text" id="passenger-name" placeholder="Raju Singh" />
+            <label for="passenger-phone"></label>
+            <input
+              type="number"
+              id="passenger-phone"
+              placeholder="9087675477"
+            />
+            <label for="passenger-bus-number-morning">morning bus number</label>
+            <input
+              type="text"
+              id="passenger-bus-number-morning"
+              placeholder="MH101002"
+            />
+            <label for="passenger-bus-number-evening">evening bus number</label>
+            <input
+              type="text"
+              id="passenger-bus-number-evening"
+              placeholder="MH101002"
+            />
+            <label for="passenger-bus-stop">Bus stop</label>
+            <input
+              type="text"
+              id="passenger-bus-stop"
+              placeholder="shahupuri"
+            />
+            <button>Clear</button>
+            <button>Add</button>
+          </form>
+        </section>
+      </div>
+</body>
+</html>
