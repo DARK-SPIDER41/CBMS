@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    .vehicle-list {
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .location-btn {
+      padding: 6px 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .location-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .location-btn ion-icon {
+      margin-right: 5px;
+    }
+
+    .location-btn-txt {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <section class="section-vehicle sec hidden">
+    <h2>List Of Vehicles</h2>
+    <div class="vehicle-list">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Sr No.</th>
+            <th scope="col">V-ID</th>
+            <th scope="col">Vehicle Number</th>
+            <th scope="col">Driver</th>
+            <th scope="col">Vehicle Type</th>
+            <th scope="col">Live Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>CEK001</td>
+            <td>KL10A008</td>
+            <td>Varkey</td>
+            <td>Bus</td>
+            <td>
+              <button class="location-btn btn">
+                <ion-icon name="location-outline"></ion-icon>
+                <span class="location-btn-txt">View</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CEK002</td>
+            <td>KL62A004</td>
+            <td>Chacko</td>
+            <td>Bus</td>
+            <td>
+              <button class="location-btn btn">
+                <ion-icon name="location-outline"></ion-icon>
+                <span class="location-btn-txt">View</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>CEK003</td>
+            <td>KL27N048</td>
+            <td>Antony</td>
+            <td>Bus</td>
+            <td>
+              <button class="location-btn btn">
+                <ion-icon name="location-outline"></ion-icon>
+                <span class="location-btn-txt">View</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>CEK004</td>
+            <td>KL27G052</td>
+            <td>Hari</td>
+            <td>Bus</td>
+            <td>
+              <button class="location-btn btn">
+                <ion-icon name="location-outline"></ion-icon>
+                <span class="location-btn-txt">View</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>CEK005</td>
+            <td>KL10K002</td>
+            <td>Raju</td>
+            <td>Bus</td>
+            <td>
+              <button class="location-btn btn">
+                <ion-icon name="location-outline"></ion-icon>
+                <span class="location-btn-txt">View</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
+</html>
